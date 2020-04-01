@@ -7,6 +7,8 @@ import { fetchComments } from '../actions/commentsActions'
 import { Post } from '../components/Post'
 import { Comment } from '../components/Comment'
 
+import { Link } from 'react-router-dom'
+
 const SinglePostPage = ({
   match,
   dispatch,
@@ -43,6 +45,9 @@ const SinglePostPage = ({
       {renderPost()}
       <h2>Comments</h2>
       {renderComments()}
+      <Link to="/posts" className="button">
+        Back
+      </Link>
     </section>
   )
 }
