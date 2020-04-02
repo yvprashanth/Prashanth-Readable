@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 
-import { fetchPost } from '../actions/postActions'
-import { fetchComments } from '../actions/commentsActions'
+import { fetchPost } from '../actions/postActions';
+import { fetchComments } from '../actions/commentsActions';
 
-import { Post } from '../components/Post'
-import { Comment } from '../components/Comment'
+import { Post } from '../components/Post';
+import { Comment } from '../components/Comment';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const SinglePostPage = ({
   match,
