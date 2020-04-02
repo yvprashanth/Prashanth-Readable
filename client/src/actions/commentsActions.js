@@ -15,7 +15,7 @@ export function fetchComments(postId) {
 
     try {
       const response = await fetch(
-        `https://jsonplaceholder.typicode.com/comments?postId=${postId}`
+        `/api/posts/${postId}/comments`
       )
       const data = await response.json()
 
