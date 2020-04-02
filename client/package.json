@@ -15,17 +15,15 @@
     "redux-thunk": "2.3.0"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
     "typescript": "3.3.3"
   },
   "scripts": {
-    "client": "cd client && npm start",
-    "server": "cd api-server && npm start",
-    "start": "concurrently --kill \"npm run client\" \"npm server\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:3001",
   "browserslist": [
     ">0.2%",
     "not dead",

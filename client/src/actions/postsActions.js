@@ -14,7 +14,7 @@ export function fetchPosts() {
     dispatch(getPosts())
 
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+      const response = await fetch('/api/posts')
       const data = await response.json()
 
       dispatch(getPostsSuccess(data))
